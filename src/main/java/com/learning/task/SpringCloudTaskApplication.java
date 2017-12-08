@@ -20,12 +20,14 @@ public class SpringCloudTaskApplication {
 	}
 	
 	public class TollProcessor implements CommandLineRunner {
-
+		
 		@Override
 		public void run(String... args) throws Exception {
 			
+			System.out.println("Processing task");
+			
 			if(null != args) {
-				System.out.println("args length: " + args.length);
+				System.out.println("TASK: args length: " + args.length);
 			}
 		}
 		
